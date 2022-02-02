@@ -1,0 +1,12 @@
+import React from 'react';
+
+
+export default function Eat(props){
+    return (
+       <>
+           <div className={`lorem text-${props.text}`}>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est ex perferendis dolores earum, repellendus totam quibusdam corporis accusantium iure dolorum dicta. Optio sapiente sint aliquid nisi amet at vitae magnam. Nihil in quibusdam dolore. Adipisci nisi est odio sunt at consequatur, maiores tempora ullam doloribus, tempore, suscipit amet dolorem ut aliquam! Enim provident, ullam, facilis quisquam aperiam dolor cumque ea fuga sapiente, repellendus quidem natus nostrum reiciendis! Sed sunt neque, libero pariatur provident voluptates. Quam culpa pariatur natus voluptas suscipit a saepe iste laboriosam corporis vero nobis id debitis dolorem, tempore, ducimus numquam voluptatem mollitia porro consequatur assumenda! Quasi assumenda et iure adipisci, eaque a! Beatae, eligendi rem maxime placeat ut, quia enim unde quod, officiis provident sit! Esse soluta odit rerum voluptatem perferendis quia consequuntur in ducimus expedita? Necessitatibus voluptatibus consequuntur corporis aspernatur ex unde consectetur voluptatem ratione possimus! Fugiat, assumenda! Iusto, temporibus? Vitae nisi tempora fuga voluptas iusto delectus quia velit atque quasi totam mollitia architecto deserunt amet aliquam, et sint voluptate consequuntur. Error reiciendis molestias, adipisci ipsum repellendus officiis natus tenetur est praesentium nobis dolores ipsa distinctio dolorum, optio id harum dicta minima facilis corrupti aspernatur nisi. Porro doloribus delectus praesentium, impedit reprehenderit nesciunt fugit consectetur maiores cumque obcaecati nisi! Non adipisci facere commodi repudiandae tempore? Eos necessitatibus eaque modi mollitia repudiandae sequi fugit similique assumenda animi, incidunt libero dolor, voluptatibus ad corporis. Optio accusantium fuga quo hic laboriosam rem eaque voluptas dolores cum ea sint quod beatae minus numquam, autem non. Perspiciatis velit culpa quasi tempora qui commodi! Veniam consequatur eligendi, iusto inventore itaque quasi expedita aliquid aliquam totam commodi quam ipsa doloribus hic ipsam perferendis optio laborum facere? Earum, et, corporis nulla explicabo atque, architecto magnam minima a fuga molestiae voluptate commodi maxime reiciendis laborum corrupti voluptatibus veritatis pariatur? Suscipit saepe corrupti dolor quia.
+           </div>
+       </>
+    );
+}
