@@ -1,19 +1,19 @@
 // import React from "react";
 // import React, { useState } from "react";
 import PropTypes from "prop-types";
-// import{Link} from 'react-router-dom'
+import{Link} from 'react-router-dom'
 
 export default function Navbar(props) {
   return (
     <div>
       <nav
-        className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
+        className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.bgColor}`} 
       >
         <div className="container-fluid">
           {/* <Link className="navbar-brand" to="/home"> */}
-          <a className="navbar-brand" href="/home">
+          <Link className="navbar-brand" to="/home">
             {props.title}
-          </a>{" "}
+          </Link>{" "}
           {/*props*/}
           <button
             className="navbar-toggler"
@@ -30,46 +30,46 @@ export default function Navbar(props) {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 {/* <Link className="nav-link active" aria-current="page" to="/home"> */}
-                <a className="nav-link active" aria-current="page" href="/home">
+                <Link className="nav-link " aria-current="page" to="/home">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 {/* <Link className="nav-link" to="/about"> */}
-                <a className="nav-link" href="/about">
+                <Link className="nav-link" to="/about">
                   {props.aboutText}
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="/"
+                  to="/"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Menu
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     {/* <Link className="dropdown-item" to="/study"> */}
-                    <a className="dropdown-item" href="/study">
+                    <Link className="dropdown-item" to="/study">
                       Study
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     {/* <Link className="dropdown-item" to="/fun"> */}
-                    <a className="dropdown-item" href="/fun">
+                    <Link className="dropdown-item" to="/fun">
                       Fun
-                    </a>
+                    </Link>
                   </li>
                   {/* <li><hr className="dropdown-divider"/></li> */}
                   <li>
                     {/* <Link className="dropdown-item" to="/eat"> */}
-                    <a className="dropdown-item" href="/eat">
+                    <Link className="dropdown-item" to="/eat">
                       Eat
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>

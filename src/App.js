@@ -3,17 +3,17 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar"; //so that Navbar ka raita ek jagah pr hi na fail jae it shuld be short and organized and also we can use navbar again
 import TextArea from "./components/TextArea";
 import Alert from "./components/Alert";
-// import About from "./components/About";
-// import Study from "./components/Study";
-// import Fun from "./components/Fun";
-// import Eat from "./components/Eat";
+import About from "./components/About";
+import Study from "./components/Study";
+import Fun from "./components/Fun";
+import Eat from "./components/Eat";
 
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-//   Link
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  // Link
+} from "react-router-dom";
 
 
 //Here function start
@@ -25,15 +25,15 @@ function App() {
   const toggleMode = () => {
     if (mode === "light") {
       setmode("dark");
-      document.body.style.backgroundColor = "#212529";
+      document.body.style.backgroundColor = "rgb(24, 20, 84)";
       showAlert("Dark mode has been enabled", 'primary')
-      document.title = "TextUtils-Dark Mode"
+      // document.title = "TextUtils-Dark Mode"
     }
     else {
       setmode("light");
-      document.body.style.backgroundColor = "white";
+      document.body.style.backgroundColor = "rgb(255, 149, 188)";
       showAlert("Light mode has been enabled", 'primary')
-      document.title = "TextUtils-Light Mode"
+      // document.title = "TextUtils-Light Mode"
     }
   };
 
@@ -67,22 +67,23 @@ function App() {
           showAlert={showAlert} heading=" About Yourself" text={mode == "light" ? "dark" : "light"} mode={mode == "light" ? "white" : "black"} /> */}
       {/* </div> */}
   
-    {/* <Router> */}
-           <Navbar title="Navbar1" aboutText="About1" mode={mode} toggleMode={toggleMode} text={mode === "light" ? "dark" : "light"} />
+     <Router> 
+           <Navbar title="Navbar1" aboutText="About1" mode={mode} toggleMode={toggleMode} text={mode === "light" ? "dark" : "light"}
+           bgColor={mode==="light"?"info":"dark"} />
            {/* alert */}
           <Alert alert={alert} />
-     {/* <Routes>
+      <Routes>
       <Route
        exact path='/about' 
         element={
-          <About/>
+          <About  mode={mode} toggleMode={toggleMode} text={mode === "light" ? "dark" : "light"}/>
         }
       />
         <Route
        exact path='/Study' 
         element={
           <Study
-          text={mode == "light" ? "dark" : "light"}
+          text={mode === "light" ? "dark" : "light"}
           />
         }
       />
@@ -90,7 +91,7 @@ function App() {
        exact path='/fun' 
         element={
           <Fun
-          text={mode == "light" ? "dark" : "light"}
+          text={mode === "light" ? "dark" : "light"}
           />
         }
       />
@@ -98,20 +99,20 @@ function App() {
        exact path='/eat'
         element={
           <Eat
-          text={mode == "light" ? "dark" : "light"}
+          text={mode === "light" ? "dark" : "light"}
           />
         }
-      /> */}
-     {/* <Route */}
-       {/* exact path='/home'  */}
-        {/* element={ */}
+      /> 
+      <Route 
+        exact path='/home' 
+         element={ 
           <TextArea
-          showAlert={showAlert} heading=" About Yourself" text={mode === "light" ? "dark" : "light"} mode={mode === "light" ? "white" : "black"} />
-        {/* }
-      /> */}
+          showAlert={showAlert} heading="TextUtils- Convert | UpperCase to LowerCase | LowerCase to UpperCase" textColor={mode === "light" ? "dark" : "light"} mode={mode === "light" ? "#efdeff" : "rgb(11, 15, 48)"} />
+         }
+      /> 
 
-     {/* </Routes>
-     </Router> */}
+     </Routes>
+     </Router> 
 
 
     </>

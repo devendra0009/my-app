@@ -9,13 +9,17 @@ function Alert(props) {
     }
    
   return (
-   props.alert && <div className={`alert alert-${props.alert.type} d-flex align-items-center`} role="alert">
+    
+   <div style={{height:'60px'}}>
+   {props.alert && <div className={`alert alert-${props.alert.type} d-flex align-items-center`} role="alert">
   <svg className="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use /></svg>
   <div>
    <strong>{Capitalize(props.alert.type)}</strong> {props.alert.msg}
   </div>
+</div>}
 </div>
-    );
-}
+ 
+    )
+   }
 
-export default Alert;
+export default Alert
