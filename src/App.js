@@ -12,6 +12,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  BrowserRouter,
   // Link
 } from "react-router-dom";
 
@@ -66,7 +67,7 @@ function App() {
          {/* <TextArea
           showAlert={showAlert} heading=" About Yourself" text={mode == "light" ? "dark" : "light"} mode={mode == "light" ? "white" : "black"} /> */}
       {/* </div> */}
-  
+    
      <Router> 
            <Navbar title="Navbar1" aboutText="About1" mode={mode} toggleMode={toggleMode} text={mode === "light" ? "dark" : "light"}
            bgColor={mode==="light"?"info":"dark"} />
@@ -80,7 +81,7 @@ function App() {
         }
       />
         <Route
-       exact path='/Study' 
+       exact path='/study' 
         element={
           <Study
           text={mode === "light" ? "dark" : "light"}
@@ -90,17 +91,13 @@ function App() {
       <Route
        exact path='/fun' 
         element={
-          <Fun
-          text={mode === "light" ? "dark" : "light"}
-          />
+          <Fun text={mode === "light" ? "dark" : "light"} />
         }
       />
       <Route
        exact path='/eat'
         element={
-          <Eat
-          text={mode === "light" ? "dark" : "light"}
-          />
+          <Eat text={mode === "light" ? "dark" : "light"} />
         }
       /> 
       <Route 
