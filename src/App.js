@@ -101,7 +101,7 @@ function App() {
         }
       /> 
       <Route 
-        exact path='/home' 
+        exact path='/' 
          element={ 
           <TextArea
           showAlert={showAlert} heading="TextUtils- Convert | UpperCase to LowerCase | LowerCase to UpperCase" textColor={mode === "light" ? "dark" : "light"} mode={mode === "light" ? "#efdeff" : "rgb(11, 15, 48)"} />
@@ -122,3 +122,6 @@ export default App;
 
 // {/*use of props*/ }
 //  {/* <Navbar title="Navbar2" aboutText="About2" /> */ }
+
+
+

@@ -11,7 +11,7 @@ export default function Navbar(props) {
       >
         <div className="container-fluid">
           {/* <Link className="navbar-brand" to="/home"> */}
-          <Link className="navbar-brand" to="/home">
+          <Link className="navbar-brand" to="/">
             {props.title}
           </Link>{" "}
           {/*props*/}
@@ -30,7 +30,7 @@ export default function Navbar(props) {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 {/* <Link className="nav-link active" aria-current="page" to="/home"> */}
-                <Link className="nav-link " aria-current="page" to="/home">
+                <Link className="nav-link " aria-current="page" to="/">
                   Home
                 </Link>
               </li>
